@@ -14,6 +14,6 @@ document.querySelector('.prev').addEventListener('click', () => {
 });
 
 function updateCarousel() {
-    const offset = -index * (slides[0].clientWidth + 20); // 20px is the margin between slides
+    const offset = -index * (slides[0].offsetWidth + 20); // 20px - это расстояние между слайдами
     document.querySelector('.carousel-container').style.transform = `translateX(${offset}px)`;
 }
